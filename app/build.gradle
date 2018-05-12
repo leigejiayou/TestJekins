@@ -62,6 +62,9 @@ android {
     if (buildType == "release") {
       it.getPackageApplication().outputDirectory = new File(project.property('appReleaseDir') + "/apks/${createTime}")
       println "realease 路径：-----------------${it.getPackageApplication().outputDirectory}"
+    }else{
+      it.getPackageApplication().outputDirectory = new File(project.property('appDebugDir') + "/apks/${createTime}")
+      println "debug 路径：-----------------${it.getPackageApplication().outputDirectory}"
     }
     it.outputs.each {
       //只对Release包起作用，如果不是Release包则不变更名称。
