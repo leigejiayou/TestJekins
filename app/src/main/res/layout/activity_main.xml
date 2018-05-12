@@ -6,8 +6,8 @@
     android:orientation="vertical"
     >
 
-  <TextView
-      android:id="@+id/tv_tag_view"
+  <Button
+      android:id="@+id/btn_tag_view"
       android:layout_width="100dp"
       android:layout_height="100dp"
       android:text="Hello World!"
